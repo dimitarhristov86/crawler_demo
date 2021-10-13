@@ -31,8 +31,6 @@ for link in BeautifulSoup(content).find_all('a', href=True):
 
 # loop through all href tags to check what returns web crawler
 for link in links:
-    if '/bg/tree/' in link:
-        links.remove(link)
     print(link)
 
 
