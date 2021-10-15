@@ -24,7 +24,7 @@ with open(html, 'w') as f:
 links = []
 
 # loop through all a tags
-for link in BeautifulSoup(content).find_all('a', href=True):
+for link in BeautifulSoup(content, features='html.parser').find_all('a', href=True):
     # add just the href tags to a list(links)
     if '/bg/autokelly/item/' in link['href']:
         links.append(link['href'])
@@ -32,6 +32,8 @@ for link in BeautifulSoup(content).find_all('a', href=True):
 # loop through all href tags to check what returns web crawler
 for link in links:
     print(link)
+
+#
 
 
 
