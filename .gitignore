@@ -1,6 +1,5 @@
 .idea
 venv
 ./html_data/oils.html
-crawler2.py
 main.py
 __pycache__/
