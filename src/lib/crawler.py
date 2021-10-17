@@ -15,7 +15,7 @@ class Crawler:
 
                 self.visited_urls.append(url)
                 self.urls_to_visit.remove(url)
-            except:
+            except
 
 
     def get_html_content(self, url):
